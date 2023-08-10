@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration form</title>
+    <style>
+        body
+        {
+            background-color:rgb(105, 205, 255);
+        }
+        div
+        { 
+        text-align:center;
+        color: black;
+        font-size: 20px;
+        font-style: bold;
+        }
+        fieldset{
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p style="background-color: fuchsia; font-size: 10mm;">REGISTRATION FORM</p>
+    <fieldset>
+    <form action="registersuccess.html" target="_self"><br>
+    
+    Firstname:<input type="text" id="firstname">
+    <label for="firstname"></label>
+    Lastname:<input type="text" id="lastname"><br><br>
+    <label for="lastname"></label>
+    Rollno:<input type="number" required><br><br>
+    <label for="rollno"></label>
+    Branch:<input type="text" required><br><br>
+    <label for="branch"></label>
+    Email:<input type="text"><br><br>
+    <label for="email"></label>
+    Course :  
+<label>   
+<select>  
+<option value="Course">Select Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>
+</select>
+</label> <br> <br>
+<label for="gender">gender</label><br>
+    <input type="radio">male
+    <input type="radio">female
+    <input type="radio">other<br><br>
+    Phoneno:<input type="number" required>
+    <label for="phoneno"></label>
+    Address:<input type="text" required><br><br>
+    <label for="Address"></label>
+    <input type="submit">
+    <input type="button" value="reset">
+    <input type="button" value="cancel">
+    </div>
+    </fieldset>
+    </form>
+</body>
+</html>

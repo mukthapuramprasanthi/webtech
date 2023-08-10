@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Styles</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: aqua;
+            padding: 20px;
+            box-shadow: #007bff;
+        }
+
+        h1 {
+            color: chartreuse;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Image Styles */
+        .image-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-wrapper img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-wrapper img.captioned {
+            position: relative;
+        }
+
+        .image-wrapper img.captioned:after {
+            content: attr(alt);
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 8px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Image Styles Example</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Image with Rounded Corners and Shadow</h2>
+        <div class="image-wrapper">
+            <img src="dora-the-explorer.download" alt="Image 1">
+        </div>
+
+        <h2>Image with Caption</h2>
+        <div class="image-wrapper">
+            <img src="download.jpeg" alt="Image 2" class="captioned">
+        </div>
+        
+        <h2>Image with Border</h2>
+        <div class="image-wrapper" style="border: 6px solid red; padding: 8px;">
+            <img src="100_9948.JPG" alt="Image 3">
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Image Styles Example. All rights reserved.
+    </footer>
+</body>
+</html>
